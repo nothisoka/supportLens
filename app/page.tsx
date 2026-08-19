@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const stats = [
   {
     label: "Total complaints",
@@ -61,9 +63,12 @@ export default function Home() {
             </p>
           </div>
 
-          <button className="rounded-lg bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-800">
+          <Link
+            href="/complaints"
+            className="rounded-lg bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-800"
+          >
             Upload complaints
-          </button>
+          </Link>
         </div>
       </header>
 
